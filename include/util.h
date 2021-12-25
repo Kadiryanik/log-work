@@ -24,7 +24,6 @@
 #define VA_ARGS(...) , ##__VA_ARGS__
 #define LOG_ERR(frm, ...) fprintf(stderr, LRED "%s[%d]: " NORM frm, __func__, __LINE__ VA_ARGS(__VA_ARGS__));
 #define LOG_INFO(...) printf(__VA_ARGS__);
-#define LOG_DEBUG(frm, ...) printf(LBLUE "%s[%d]: " NORM frm, __func__, __LINE__ VA_ARGS(__VA_ARGS__));
 
 /*------------------------------------------------------------------------------*/
 #define sfree(_p) do {	    \
